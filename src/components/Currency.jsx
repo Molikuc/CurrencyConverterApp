@@ -21,7 +21,6 @@ function Currency() {
         })
     }
 
-
   return (
     <div>
         <div className='header'>        
