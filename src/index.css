@@ -21,10 +21,47 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
+}
+
+.currency{
+  width: 300px;
+  height: 40px;
+  border-radius: 9px;
+  border: none;
+  font-size: 1rem;
+  padding-left: 15px;
+  font-family: Inter, sans-serif;
 }
 
 .display--converter{
   display: flex;
   justify-content: center;
+}
+
+.button--converter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 10px;
+}
+
+.choice{
+  width: 150px;
+  height: 50px;
+  border-radius: 9px;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(0deg, rgba(143,151,163,0.5) 0%, rgba(127,158,201,0.3) 100%);
+  cursor: pointer;
+}
+
+.choice:hover{
+  background: linear-gradient(0deg, rgba(143,151,163,1) 0%, rgba(127,158,201,1) 100%);
+}
+
+.choice:active{
+  background: linear-gradient(0deg, rgba(143,151,163,0.5) 0%, rgba(127,158,201,0.3) 100%);
+
 }

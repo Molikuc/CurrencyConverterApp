@@ -26,10 +26,13 @@ function Currency() {
         <div className='header'>        
             <h1>Currency Converter EURO to KOREAN WON</h1>
         </div>
+        <div className='button--converter'>
+            <button className='choice' onClick={getWon}>EUR TO WON</button>
+            <button className='choice' onClick={getEur}>WON TO EUR</button>
+        </div>
+
         <div className='converter'>
-            <input type='text' placeholder='Your Money' onChange={(e) => setNumber(e.target.value)} />
-            <button onClick={getWon}>WON</button>
-            <button onClick={getEur}>EURO</button>
+            {currency ? <input className='currency' type='text' placeholder='Your Money' onChange={(e) => setNumber(e.target.value)} /> : null}
         </div>
         <div className='display--converter'>
             {currency ? <div>{(number *(Object.values(currency.data)[0])).toFixed(2)}</div> : null}
